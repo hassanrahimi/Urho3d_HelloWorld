@@ -22,18 +22,21 @@ namespace HelloWorld
         }
         private void CreateText()
         {
-            var label = new Label()
-            {
 
-                Text = "سلام",
-                VerticalTextAlignment = TextAlignment.Center,
-                HorizontalTextAlignment =TextAlignment.Center
-            };
+            //  با ابزار های فرم کار نمی کند
+            //var label = new Label()
+            //{
+
+            //    Text = "سلام",
+            //    VerticalTextAlignment = TextAlignment.Center,
+            //    HorizontalTextAlignment =TextAlignment.Center
+            //};
 
             var text = new Text()
             {
+                //فعلا به غیر از فونتی که خودشان ساختن کار نمی کند
                 //Value = "سلام به همه این اولین برنامه من است با نام دنیازی من",
-                Value="سلام",
+                Value="Hello World",
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
                 FontSize=40,
@@ -44,10 +47,12 @@ namespace HelloWorld
 
             text.SetColor(Urho.Color.Cyan);
             text.SetFont(font: ResourceCache.GetFont("Fonts/Anonymous Pro.ttf"),size: 40);
+
             //text.SetFont(font: ResourceCache.GetFont("Fonts/Yekan.ttf"), size: 40);
 
             //add to UI Root
 
+            //با ابزار های دیگر نیز کار نمی کند
             //UI.Root.AddChild(text);
             UI.Root.AddChild(text);
 
